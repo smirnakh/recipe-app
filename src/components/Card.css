@@ -1,0 +1,123 @@
+.card {
+  width: 47%;
+  height: 60%;
+  margin-bottom: 15px;
+  background: white;
+  border-radius: 16px;
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(245, 237, 237, 0.803);
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: center;
+}
+img {
+  width: 150px;
+  height: 150px;
+  margin: auto;
+  margin-top: 12px;
+  border-radius: 6px;
+  box-shadow: -14px 16px 40px -2px rgba(0, 0, 0, 0.67);
+  -webkit-box-shadow: -14px 16px 40px -2px rgba(0, 0, 0, 0.67);
+  -moz-box-shadow: -14px 16px 40px -2px rgba(0, 0, 0, 0.67);
+}
+
+h1 {
+  width: 90%;
+  font-family: 'Libre Bodoni', serif;
+  font-weight: bold;
+  font-size: 16px;
+  color: red;
+  text-align: center;
+}
+.time-servings {
+  display: flex;
+  justify-content: space-evenly;
+  font-size: 15px;
+  color: wight;
+}
+#servings {
+  border-bottom: solid 1px white;
+  box-shadow: rgba(242, 239, 239, 0.915) 0px 5px 15px;
+}
+#time {
+  border-bottom: solid 1px white;
+  box-shadow: rgba(242, 239, 239, 0.915) 0px 5px 15px;
+}
+.card-btn {
+  margin: auto;
+  margin-bottom: 20px;
+  text-decoration: none;
+  font-family: 'Libre Bodoni', serif;
+  width: 100px;
+  height: 20px;
+  font-size: 14px;
+  background-color: black;
+  border: none;
+  border-radius: 5px;
+  color: #f0f0f0;
+  cursor: pointer;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  white-space: nowrap;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+.card-btn:hover {
+  cursor: pointer;
+  box-shadow: rgba(242, 239, 239, 0.915) 0px 5px 15px;
+  color: wight;
+}
+
+.cuisine p {
+  font-size: 16px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.ingredients {
+  margin-bottom: 5px;
+  font-size: 12px;
+  width: 40vw;
+  height: 100px;
+  overflow: auto;
+  align-self: center;
+  line-height: 15px;
+  padding-right: 25px;
+}
+ul li {
+  list-style: none;
+}
+li::before {
+  content: '. ';
+  color: red;
+  font-size: 30px;
+}
+
+@media (min-width: 768px) {
+  .card {
+    width: 23%;
+    height: 60%;
+    margin-right: 4px;
+    margin-bottom: 15px;
+    align-items: center;
+  }
+  .ingredients {
+    width: 20vw;
+    height: 70px;
+  }
+  .cuisine p {
+    text-align: center;
+  }
+  .time-servings {
+    gap: 20px;
+  }
+  h1 {
+    width: 100%;
+  }
+}
